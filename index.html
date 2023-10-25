@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Oxanium:wght@300;400;700&family=Poppins:wght@200;300;400;600&family=Public+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="conteudo">
+        <h1 class="titulo">FICOU COM DÚVIDA? <br />NOS MANDE UMA MENSAGEM!</h1>
+        <p class="texto">
+          caso tenha ficado com qualquer dúvida <br />
+          basta nos mandar uma mensagem e <br />
+          entraremos em contato em menos de 24h.
+        </p>
+      </div>
+
+      <form id="form">
+        <div class="info">
+          <input
+            type="text"
+            name="nome"
+            class="inputs requerido"
+            oninput="validacaoNome()"
+            placeholder="Nome completo *"
+          />
+          <span class="span-requerido">campo obrigatório</span>
+        </div>
+
+        <div class="info">
+          <input
+            type="email"
+            name="email"
+            class="inputs requerido"
+            oninput="validacaoEmail()"
+            placeholder="Email *"
+          />
+          <span class="span-requerido">campo obrigatório</span>
+        </div>
+
+        <div class="info">
+          <input
+            type="tel"
+            name="telefone"
+            class="inputs requerido"
+            oninput="validacaoNumeroTelefone()"
+            placeholder="Telefone *"
+          />
+          <span class="span-requerido">campo obrigatório</span>
+        </div>
+
+        <div class="info">
+          <textarea
+            name="mensagem"
+            class="inputs requerido textarea"
+            oninput="validacaoMensagem()"
+            cols="30"
+            rows="10"
+            placeholder="Mensagem *"
+          ></textarea>
+          <span class="span-requerido">campo obrigatório</span>
+        </div>
+
+        <p class="campos-obrigatorios">*campos obrigatórios</p>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <script src="src/js/validacao.js"></script>
+  </body>
+</html>

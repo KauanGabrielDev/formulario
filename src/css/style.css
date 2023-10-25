@@ -1,0 +1,86 @@
+body {
+  background-image: url(../imagens/imagem\ de\ fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.conteudo {
+  width: 300px;
+  height: 111px;
+  margin-right: 60px;
+}
+
+.conteudo .titulo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.conteudo .texto {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.container form {
+  background-color: #ffffff;
+  width: 340px;
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.container form .inputs {
+  width: 298px;
+  height: 35px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.container form .inputs.textarea {
+  width: 298px;
+  height: 100px;
+}
+
+.container .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.span-requerido {
+  display: none;
+  font-size: 0.8rem;
+  color: #f52e2e;
+  width: 66px;
+  height: 9px;
+}
+
+.container form .campos-obrigatorios {
+  font-size: 1.5rem;
+  font-weight: 400;
+  transform: translateX(-85px);
+}
+
+.container form button {
+  color: #ffffff;
+  background-color: #3ccc87;
+  width: 298px;
+  height: 41px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
